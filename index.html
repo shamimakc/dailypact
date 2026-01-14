@@ -1,12 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Pact</title>
-</head>
-<body>
-  <h1>Daily Pact</h1>
-  <p>Daily standups for solo builders.</p>
-</body>
-</html>
+import { Hero } from './components/Hero';
+import { HowItWorks } from './components/HowItWorks';
+import { WhoItsFor } from './components/WhoItsFor';
+import { Schedule } from './components/Schedule';
+import { Pricing } from './components/Pricing';
+import { FAQ } from './components/FAQ';
+import { FinalCTA } from './components/FinalCTA';
+import { Footer } from './components/Footer';
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-white">
+      <Hero />
+      <HowItWorks />
+      <WhoItsFor />
+      <Schedule />
+      <Pricing />
+      <FAQ />
+      <FinalCTA />
+      <Footer />
+    </div>
+  );
+}
